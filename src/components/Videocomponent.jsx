@@ -23,7 +23,7 @@ const Videocomponent = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
       {video.map((video)=>(
-        <Link to={"/watch?v=" + video.id}><Videocard key={video.id} info={video}/></Link>
+        <Link key={video.id} to={"/watch?v=" + video.id}><Videocard  info={video}/></Link>
         ))}
     </div>
   )
